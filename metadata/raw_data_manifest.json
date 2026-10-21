@@ -1,0 +1,77 @@
+{
+  "source_root": "original acquisition archive (not shipped)",
+  "unique_files": 10,
+  "files": [
+    {
+      "experiment_id": "KZ191",
+      "staged_path": "data/raw/KZ191/ShrinkedNuclei.csv",
+      "sha256": "750720c9289deb5d444861dd44aee72115bad5d0e4f3ec604d40f990969204c5",
+      "size_bytes": 52357578,
+      "n_duplicate_copies": 1
+    },
+    {
+      "experiment_id": "KZ195",
+      "staged_path": "data/raw/KZ195/ShrinkedNuclei.csv",
+      "sha256": "44a1f301f8fb9afc4543d90bc2bb879cad670c4a668044eb462adcac44047617",
+      "size_bytes": 74474892,
+      "n_duplicate_copies": 1
+    },
+    {
+      "experiment_id": "KZ198",
+      "staged_path": "data/raw/KZ198/ShrinkedNuclei.csv",
+      "sha256": "1a839d292c71eba0692325e9e5d61722436e703fbe8f644b2ffbc520834569b7",
+      "size_bytes": 95978311,
+      "n_duplicate_copies": 3
+    },
+    {
+      "experiment_id": "KZ203",
+      "staged_path": "data/raw/KZ203/ShrinkedNuclei.csv",
+      "sha256": "eb0774830eb7d6f9d2ecaf470c17ff4cc774cb1e5e397a4d853b1a4d25184b44",
+      "size_bytes": 200102451,
+      "n_duplicate_copies": 1
+    },
+    {
+      "experiment_id": "KZ214",
+      "staged_path": "data/raw/KZ214/ShrinkedNuclei.csv",
+      "sha256": "d291e7cbf38c3c2c03cdb14afcdc234abd1697730143f7ca9a9341a1048a1897",
+      "size_bytes": 31491933,
+      "n_duplicate_copies": 3
+    },
+    {
+      "experiment_id": "KZ216",
+      "staged_path": "data/raw/KZ216/ShrinkedNuclei.csv",
+      "sha256": "b3a0d4900a8fb7a514eb8ee65daa5fb5adce11800c006da9edbe202151ef9dc5",
+      "size_bytes": 15544388,
+      "n_duplicate_copies": 1
+    },
+    {
+      "experiment_id": "KZ222",
+      "staged_path": "data/raw/KZ222/ShrinkedNuclei.csv",
+      "sha256": "858f2c3acfe1731d31880835e031248ad8c0bf54c9c23dde94314f31f6636e18",
+      "size_bytes": 71966126,
+      "n_duplicate_copies": 1
+    },
+    {
+      "experiment_id": "KZ223",
+      "staged_path": "data/raw/KZ223/ShrinkedNuclei.csv",
+      "sha256": "799b43c10b3d4c0ef2df42a6228770719180061764780dc93733de44d632e188",
+      "size_bytes": 98684404,
+      "n_duplicate_copies": 2
+    },
+    {
+      "experiment_id": "KZ226",
+      "staged_path": "data/raw/KZ226/ShrinkedNuclei.csv",
+      "sha256": "d4eb64ec47904b2af178491feea106d9d2a04f7ef0c09889255a49eb068c50c7",
+      "size_bytes": 33846637,
+      "n_duplicate_copies": 2
+    },
+    {
+      "experiment_id": "KZ227",
+      "staged_path": "data/raw/KZ227/ShrinkedNuclei.csv",
+      "sha256": "fb42b6e3437368afa348f5234d873b627e15aef91b1cbc398e5d4fcbebd1de3f",
+      "size_bytes": 128291146,
+      "n_duplicate_copies": 1
+    }
+  ],
+  "note": "Deduplicated by SHA256 from the original acquisition archive. staged_path is the location in this repository; sha256 and size_bytes pin the exact file content."
+}

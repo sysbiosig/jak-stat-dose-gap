@@ -1,0 +1,212 @@
+{
+  "ic50_fold_medians": {
+    "complete_over_logmean": 2.39,
+    "complete_over_arithmean": 7.42,
+    "partial_over_arithmean": 1.72,
+    "partial_over_logmean": 0.8
+  },
+  "ic50_fold_ci95": {
+    "complete_over_logmean": [
+      1.86,
+      3.1
+    ],
+    "complete_over_arithmean": [
+      3.5,
+      16.12
+    ],
+    "partial_over_arithmean": [
+      1.55,
+      2.93
+    ],
+    "partial_over_logmean": [
+      0.52,
+      1.74
+    ]
+  },
+  "bootstrap": {
+    "n": 10000,
+    "seed": 7
+  },
+  "complete_at_crossing_medians": {
+    "0.2": {
+      "arith": 0.018,
+      "log": 0.039
+    },
+    "0.5": {
+      "arith": 0.05,
+      "log": 0.197
+    },
+    "0.8": {
+      "arith": 0.244,
+      "log": 0.628
+    }
+  },
+  "partial_at_crossing_medians": {
+    "0.2": {
+      "arith": 0.126,
+      "log": 0.282
+    },
+    "0.5": {
+      "arith": 0.345,
+      "log": 0.608
+    },
+    "0.8": {
+      "arith": 0.812,
+      "log": 0.886
+    }
+  },
+  "n_profiles": {
+    "0.2": {
+      "arith": 24,
+      "log": 24
+    },
+    "0.5": {
+      "arith": 24,
+      "log": 23
+    },
+    "0.8": {
+      "arith": 23,
+      "log": 22
+    }
+  },
+  "complete_fraction_decomposition_pct": {
+    "0.2": {
+      "arith": {
+        "cell": 28,
+        "inhibitor": 33,
+        "target": 3,
+        "unexplained": 37
+      },
+      "log": {
+        "cell": 33,
+        "inhibitor": 29,
+        "target": 3,
+        "unexplained": 35
+      }
+    },
+    "0.5": {
+      "arith": {
+        "cell": 40,
+        "inhibitor": 26,
+        "target": 2,
+        "unexplained": 32
+      },
+      "log": {
+        "cell": 52,
+        "inhibitor": 17,
+        "target": 1,
+        "unexplained": 30
+      }
+    },
+    "0.8": {
+      "arith": {
+        "cell": 39,
+        "inhibitor": 13,
+        "target": 10,
+        "unexplained": 37
+      },
+      "log": {
+        "cell": 33,
+        "inhibitor": 25,
+        "target": 2,
+        "unexplained": 39
+      }
+    }
+  },
+  "partial_fraction_decomposition_pct": {
+    "0.2": {
+      "arith": {
+        "cell": 18.92,
+        "inhibitor": 40.61,
+        "target": 15.69,
+        "unexplained": 24.78
+      },
+      "log": {
+        "cell": 4.04,
+        "inhibitor": 14.36,
+        "target": 50.09,
+        "unexplained": 31.51
+      }
+    },
+    "0.5": {
+      "arith": {
+        "cell": 30.72,
+        "inhibitor": 7.65,
+        "target": 40.05,
+        "unexplained": 21.57
+      },
+      "log": {
+        "cell": 1.02,
+        "inhibitor": 8.8,
+        "target": 71.09,
+        "unexplained": 19.09
+      }
+    },
+    "0.8": {
+      "arith": {
+        "cell": 0.37,
+        "inhibitor": 10.21,
+        "target": 63.16,
+        "unexplained": 26.27
+      },
+      "log": {
+        "cell": 11.13,
+        "inhibitor": 14.73,
+        "target": 42.45,
+        "unexplained": 31.7
+      }
+    }
+  },
+  "dose_penalty_decomposition_pct": {
+    "complete": {
+      "arith": {
+        "cell": 37,
+        "inhibitor": 13,
+        "target": 11,
+        "unexplained": 39
+      },
+      "log": {
+        "cell": 45,
+        "inhibitor": 18,
+        "target": 0,
+        "unexplained": 37
+      }
+    },
+    "partial": {
+      "arith": {
+        "cell": 12,
+        "inhibitor": 3,
+        "target": 70,
+        "unexplained": 15
+      },
+      "log": {
+        "cell": 1,
+        "inhibitor": 29,
+        "target": 58,
+        "unexplained": 11
+      }
+    }
+  },
+  "palette": {
+    "partial": "#c0392b",
+    "complete": "#1f6cb4",
+    "pSTAT1": "#5e3c99",
+    "pSTAT3": "#e6a419",
+    "factor_cell": "#543005",
+    "factor_inhibitor": "#8c6bb1",
+    "factor_target": "#66c2a4",
+    "factor_unexplained": "#e0e0e0",
+    "tag": "#555555",
+    "THP1_marker": "o",
+    "U937_marker": "^"
+  },
+  "normalization": {
+    "divisor": 65535.0,
+    "filter": "1 < signal < 1e4",
+    "complete_bound": "95th pct of unstimulated",
+    "partial_bound": "max(complete_bound, 5th pct of saturated)",
+    "pSTAT1_col": "Intensity_MeanIntensity_Alexa488",
+    "pSTAT3_col": "Intensity_MeanIntensity_Alexa555"
+  },
+  "crossing_rule": "fit 4PL to dose->population inhibition; first MEASURED dose where the FITTED curve reaches target; read the OBSERVED state fraction at that dose"
+}

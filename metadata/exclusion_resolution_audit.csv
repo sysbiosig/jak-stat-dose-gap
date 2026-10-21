@@ -1,0 +1,7 @@
+experiment_id,n_candidate_sets,resolution,chosen_n,unstim_surviving,sat_surviving
+KZ195,0,n/a,0,14,0
+KZ198,3,multiple viable; largest viable chosen,4,2,1
+KZ214,2,resolved by analysis validity,21,2,2
+KZ216,0,n/a,0,4,0
+KZ223,1,single set,28,1,6
+KZ226,1,single set,16,6,6
